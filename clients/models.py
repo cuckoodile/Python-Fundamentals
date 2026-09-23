@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from datetime import date
+from rest_framework import status
+from rest_framework.response import Response
 
 # Create your models here.
 class User(AbstractUser):
@@ -18,3 +20,7 @@ class User(AbstractUser):
         had_birth_day = (today.month, today.day) < (self.birth_date.month, self.birth_date.day)
 
         return year - 1 if had_birth_day else year
+
+    @classmethod
+    def check_if_user_exists(cls, pk):
+        return cls.objects.filter(id=pk).first()

@@ -27,7 +27,7 @@ from rest_framework_simplejwt.views import (
 from notes.views import (
     NotesCreateListAPI
 )
-from clients.views import UserListCreateAPI, UserRetrieveAPI
+from clients.views import UserListCreateAPIView, UserRetrieveUpdateDestroyAPIView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -37,8 +37,8 @@ urlpatterns = [
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('api/token/verify/', TokenVerifyView.as_view(), name='token_verify'),
     # Users
-    path("api/users/", UserListCreateAPI.as_view(), name="list_create_users"),
-    path("api/users/<int:pk>/", UserRetrieveAPI.as_view(), name="list_create_users"),
+    path("api/users/", UserListCreateAPIView.as_view(), name="list_create_users"),
+    path("api/users/<int:pk>/", UserRetrieveUpdateDestroyAPIView.as_view(), name="list_create_users"),
 
     # Notes
     path('api/notes/', NotesCreateListAPI.as_view(), name='list_create_notes'),
