@@ -1,0 +1,78 @@
+Methods (CRUD):
+GET (Retrieve)
+POST (Create)
+PATCH (Update: Full/ Required)
+PUT (Update: Partial)
+DELETE (Delete)
+----------- Request
+method: Retrieve (GET)
+url: localhost:8000
+end_point: api/{end_point}/<int:pk>/
+
+
+
+method: delete
+url/end point: api/users/
+
+
+
+
+User2 (cuckoodile) -- GET ---> User3 (Frierens)
+yes && no
+
+
+JSON -- Parse ---> Python (List or Dictionary)
+
+
+
+Request --> urls.py --> views.py --> method --> serializer.py --> validators  --> DB (sqlite3) --> serializer.py --JSON---> cliente (return)
+
+
+
+
+admin password (hashed/ encrypted)
+pbkdf2_sha256$1500000$qQm03SCHOuEN41gyizSp1L$dVqhKOcKyc+/HrAqRlhIwxiKxW8OeMC066+AWnCfMZ4=
+
+==
+
+admin
+
+descyption
+hashed password --> actual password
+
+token
+
+
+
+-------- REACT
+Protected Pages/Routes
+useContext...
+
+HOC = Higher Order Component (withAuth and withoutAuth)
+
+visit admin panel page
+validate(Auth) -on-success--> Admin.jsx
+	       -on-fail--> Login.jsx
+
+
+Visit login page
+validate(Auth) -on-success--> index.php/html
+	       -on-fail--> {1, 2, 3, 4}
+		
+1. No token --> error(login.jsx)
+2. Invalid token --> error(login.jsx)
+3. Expired token --> fetch('api/token/refresh/')
+4. Authorization error --> error(login.jsx)
+
+
+
+ORM = Object Relational Mapping
+
+
+Levels of Validators
+1. Field level: serializers.charField() | model.charField()
+2. Specific field level: def validate_{field_name}()
+3. OBject level: def validate(self, data)
+
+Login
+backend --> middle man attack --> client (React: domain/IP Adress)
