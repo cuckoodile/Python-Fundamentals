@@ -1,0 +1,73 @@
+user id: 1 (admin)
+
+
+data = {
+    "id": 1,
+    "first_name": "Ian Sube",
+    "middle_name": "Ros",
+    "last_name": "Sube",
+    "username": "admin",
+    "password": "admin",
+    "enrollment": {
+        "id": 1,
+        "school_year": "2026-2027",
+        "status": "Incomplete",
+        "section": {
+            "id": 1,
+            "name": "1E1",
+            "thumbnail": "*.jpg",
+            "course": {
+                "id": 1,
+                "name": "Information Technology",
+                "description": "All about I.T.",
+                "thumbnail": "*.jpg",
+                "subjects": [
+                    {
+                        "id": 1,
+                        "name": "Python Fundamentals",
+                        "description": "Not about the snake...",
+                        "thumbnail": *.jpg
+                    },
+                ]
+            }
+        }
+    }
+}
+
+
+=====================
+user id: 1 (admin)
+
+
+data = {
+    "id": 1,
+    "first_name": "Ian Sube",
+    "middle_name": "Ros",
+    "last_name": "Sube",
+    "username": "admin",
+    "password": "admin",
+    "enrollment": {
+        "id": 1,
+        "school_year": "2026-2027",
+        "status": "Incomplete",
+        "section": {
+            "id": 1,
+            "name": "1E1",
+            "thumbnail": "*.jpg",
+        },
+        "course": {
+                "id": 1,
+                "name": "Information Technology",
+                "description": "All about I.T.",
+                "thumbnail": "*.jpg",
+                "subjects": [
+                    {
+                        "id": 1,
+                        "name": "Python Fundamentals",
+                        "description": "Not about the snake...",
+                        "thumbnail": *.jpg
+                    },
+                ]
+            }
+    }
+}
