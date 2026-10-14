@@ -17,4 +17,7 @@ class Enrollment(models.Model):
     
     section = models.ForeignKey(Section, on_delete=models.CASCADE, related_name="students")
 
+    # RC
+    # profile
+
     
