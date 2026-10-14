@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # Thir-part Apps
+    # Third-part Apps
     'corsheaders',
     'rest_framework',
     'rest_framework_simplejwt',

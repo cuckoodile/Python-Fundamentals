@@ -114,6 +114,11 @@ Sections: [
         "id": 1,
         "name": "1E1",
         "course_id": 1
+
+        // Reverse Call
+        "students": [
+            1, 2, ,3, ...
+        ]
     },
     {
         "id": 2,
