@@ -71,3 +71,65 @@ data = {
             }
     }
 }
+
+=====================
+Courses: [
+    {
+        "id": 1,
+        "name": "Information Technology",
+
+        // Reverse Calls
+        "sections": [
+            {
+                "id": 1,
+                "name": "1E1",
+                "course_id": 1
+            },
+        ]
+        ...
+    },
+    {
+        "id": 2,
+        "name": "Automotive",
+        ...
+
+        // Reverse Calls
+        "sections": [
+            {
+                "id": 2,
+                "name": "1H1",
+                "course_id": 2
+            },
+            {
+                "id": 3,
+                "name": "1H2",
+                "course_id": 2
+            },
+        ]
+    },
+]
+
+Sections: [
+    {
+        "id": 1,
+        "name": "1E1",
+        "course_id": 1
+    },
+    {
+        "id": 2,
+        "name": "1H1",
+        "course_id": 2
+    },
+    {
+        "id": 3,
+        "name": "1H2",
+        "course_id": 2
+    },
+]
+
+Enrollmen: {
+    "id": 1,
+    "school_year": "2026-2027",
+    "status": 'p',
+    "section_id": 
+}
