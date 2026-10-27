@@ -1,0 +1,8 @@
+from django.contrib import admin
+from django.contrib.auth.admin import UserAdmin
+
+from .models import BaseUser, Contact, ContactType
+
+admin.site.register(BaseUser, UserAdmin)
+admin.site.register(ContactType)
+admin.site.register(Contact)
